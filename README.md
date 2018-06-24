@@ -10,6 +10,7 @@ Clone or download the project and upload to a webserver.
 
 * PHP 7+
 * Gmail account with https://www.google.com/recaptcha
+* Unzip whole content of the project PHPMailer at the folder PHPMailer.
 
 ### Configuration
 
