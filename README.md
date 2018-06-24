@@ -30,6 +30,7 @@ $mail->Password = 'your_password_of_your_email';                           // SM
 
 * [PHP](http://php.net/)
 * [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+* [jQuery](https://jquery.com/)
 
 ## Third party apps
 
