@@ -20,7 +20,7 @@ data-sitekey="YOUR_KEY_CAPTCHA_HERE"
 ```
 Configure your SMPT data
 ```
-      $mail->isSMTP();                                      // Set mailer to use SMTP
+      	    $mail->isSMTP();                                      // Set mailer to use SMTP
 	    $mail->Host = 'smtp.example.example';  // Specify main and backup SMTP servers
 	    $mail->Username = 'example@example.example';                 // SMTP username
 	    $mail->Password = 'your_password_of_your_email';                           // SMTP password
