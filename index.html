@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+         function recaptcha_callback() {
+         $('#send').removeAttr('disabled');
+          };                                 
+   </script> 
+<style>
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+.grid {
+  max-width: 600px;
+  text-align: center;
+  font-size: 120px;
+  margin:20% auto;
+  color:black;
+  border-radius:20px;
+}
+.grid img{
+  border-radius: 50%;
+}
+.alert{
+    display: none;
+}
+.g-recaptcha{
+  margin-left: 25%
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="grid">
+          <form class="new-form" action="proc.php" method="POST">
+                 <div class="col-lg-16">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button">YOUR_TEXT_HERE</button>
+                      </span>
+                      <input type="hidden">
+                      <input type="text" class="form-control" name="user" placeholder="YOUR_TEXT_HERE" aria-label="Enter Site...">
+                      <span class="input-group-btn">
+                      <button class="btn btn-secondary" id="send" disabled="disabled" type="submit">Send</button>
+                      </span>
+                      </div>
+                    </div>
+                   <div class="g-recaptcha" data-sitekey="YOUR_KEY_CAPTCHA_HERE" data-callback="recaptcha_callback"></div>
+                  </form>
+  </div>
+  <video autoplay muted loop id="myVideo">
+  <source src="https://imgur.com/yEOREg3.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</body>
+</html>
