@@ -28,13 +28,7 @@ $mail->Password = 'your_password_of_your_email';                           // SM
 
 ## Built With
 
-* [PHP](http://php.net/)
-* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-* [jQuery](https://jquery.com/)
-
-## Third party apps
-
-* [PHPMailer](https://github.com/PHPMailer/PHPMailer)
+* [C#](https://docs.microsoft.com/es-es/dotnet/csharp/)
 
 ## Author
 
